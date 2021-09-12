@@ -1,0 +1,292 @@
+body {
+    margin: 0;
+    background: url(../img/jaguar_ftype_400_jaguar_ftype_jaguar_131537_3840x2160_edited.jpg);
+    background-size: cover; 
+}
+
+.h1 {
+    height: 150px;
+    padding-top: 1px; 
+    padding-left: 50px;
+    font-family: "RubikMonoOne-Regular";
+    font-size: 40px;
+    text-shadow: 1px 1px 2px #272727, 0 0 1em #6f6f6f;
+    color: #e3e3e3;
+    line-height: 0.5;
+}
+
+.two_forms {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.info {
+    height: 150px;
+    padding-top: 50px; 
+    padding-left: 50px;
+    font-family: "RubikMonoOne-Regular";
+    font-size: 15px;
+    text-shadow: 1px 1px 1px #272727, 0 0 1em #000000;
+    color: #ffffff;
+    line-height: 0.9;
+}
+
+.form_btn {
+    height: 700px;
+    width: 610px;
+    padding-left: 220px;
+}
+
+.btn1 {
+    padding: 7px;
+}
+
+.btn_text{
+    font-family: "RubikMonoOne-Regular";
+    font-size: 30px;
+    text-shadow: 1px 1px 2px #272727, 0 0 1em #cecece;
+    color: #ffffff;
+}
+
+.btn {
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    height: 130px;
+    width: 600px;
+    padding-top: 10px;
+    background-image:url(../img/btn_vehicle_edited.jpg);
+    background-size: cover; 
+    padding-left : 32px;
+    padding-top : 10px;
+    padding-bottom : 10px;
+    opacity: .7;
+    background-repeat : no-repeat;
+}
+
+.btn:hover {
+    background-image:url(../img/btn_vehicle_edited1.jpg);
+    tansition: all .7s linear;
+    -webkit-transition: all .5s linear;
+    opacity: .9;
+    -moz-transition: all .1s linear; 
+}
+
+
+.btn_dealers {
+    border-radius: 20px;
+     border: none;
+  outline: none;
+    height: 130px;
+    width: 600px;
+    padding-top: 10px;
+    background-image:url(../img/dealers_edited.jpg);
+    background-size: cover; 
+    padding-left : 32px;
+    padding-top : 10px;
+    padding-bottom : 10px;
+    opacity: .7;
+    background-repeat : no-repeat;
+}
+
+.btn_dealers:before{
+    
+}
+
+.btn_dealers:hover {
+    background-image:url(../img/dealers_edited1.jpg);
+    tansition: all .7s linear;
+    -webkit-transition: all .5s linear;
+    opacity: .9;
+    -moz-transition: all .1s linear; 
+}
+
+.btn_brands {
+    border-radius: 20px;
+     border: none;
+  outline: none;
+    height: 130px;
+    width: 600px;
+    padding-top: 10px;
+    background-image:url(../img/brands_edited.jpg);
+    background-size: cover; 
+    padding-left : 32px;
+    padding-top : 10px;
+    padding-bottom : 10px;
+    opacity: .7;
+    background-repeat : no-repeat;
+}
+
+.btn_brands:hover {
+    background-image:url(../img/brands_edited1.jpg);
+    tansition: all .7s linear;
+    -webkit-transition: all .5s linear;
+    opacity: .9;
+    -moz-transition: all .1s linear; 
+}
+
+.btn_models {
+    border-radius: 20px;
+     border: none;
+  outline: none;
+    height: 130px;
+    width: 600px;
+    padding-top: 10px;
+    background-image:url(../img/models_edited.jpg);
+    background-size: cover; 
+    padding-left : 32px;
+    padding-top : 10px;
+    padding-bottom : 10px;
+    opacity: .7;
+    background-repeat : no-repeat;
+}
+
+.btn_models:hover {
+    background-image:url(../img/models_edited1.jpg);
+    tansition: all .7s linear;
+    -webkit-transition: all .5s linear;
+    opacity: .9;
+    -moz-transition: all .1s linear; 
+}
+
+.btn_facories {
+    border-radius: 20px;
+     border: none;
+  outline: none;
+    height: 130px;
+    width: 600px;
+    padding-top: 10px;
+    background-image:url(../img/factory_edited.jpg);
+    background-size: cover; 
+    padding-left : 32px;
+    padding-top : 10px;
+    padding-bottom : 10px;
+    opacity: .7;
+    background-repeat : no-repeat;
+}
+
+.btn_facories:hover {
+    background-image:url(../img/factory_edited1.jpg);
+    tansition: all .7s linear;
+    -webkit-transition: all .5s linear;
+    opacity: .9;
+    -moz-transition: all .1s linear; 
+}
+
+.title {
+    height: 15px;
+    padding-top: 1px; 
+    padding-left: 50px;
+    font-family: "RubikMonoOne-Regular";
+    font-size: 20px;
+    text-shadow: 1px 1px 2px #272727, 0 0 1em #6f6f6f;
+    color: #e3e3e3;
+    line-height: 0.5;
+}
+
+.form_links {
+    height: 10px;
+    padding-left: 50px;
+}
+
+
+.links {
+    height: 10px;
+    padding-top: 5px; 
+    padding-left: 50px;
+    font-family: "RubikMonoOne-Regular";
+    font-size: 12px;
+    color: rgba(0, 66, 123, 0.58);
+    line-height: 0.5;
+    text-decoration: none;
+}
+
+.links:hover {color: rgb(0, 66, 123);}
+
+.main_form {
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+     background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.38), 
+          rgba(0, 0, 0, 0.24)
+        ),
+        url(http://fc02.deviantart.net/fs71/i/2011/274/6/f/ocean__sky__stars__and_you_by_muddymelly-d4bg1ub.png);
+}
+
+.main_form:hover {
+     background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.57), 
+          rgba(0, 0, 0, 0.38)
+        ),
+        url(http://fc02.deviantart.net/fs71/i/2011/274/6/f/ocean__sky__stars__and_you_by_muddymelly-d4bg1ub.png);
+}
+
+.header_of_table {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #e3e3e3;
+    line-height: 0.5;
+}
+
+.add_title {
+    padding-left: 20px;
+     font-family: "RubikMonoOne-Regular";
+    font-size: 12px;
+    color: #e3e3e3;
+    line-height: 0.5;
+}
+
+.param_title {
+    padding-left: 50px;
+     font-family: "RubikMonoOne-Regular";
+    color: #e3e3e3;
+    font-size: 12px;
+    line-height: 0.5;
+}
+
+.param_table {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.folder {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+     background: #dbdbdb !important;
+}
+
+.btn_small_edit_add{
+    font-family: Arial, sans-serif;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgba(229, 229, 229, 0.61);
+}
+
+.btn_small_edit_add:hover {
+    background-color: rgba(114, 255, 168, 0.62);
+}
+
+.btn_small_delete{
+    font-family: Arial, sans-serif;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgba(229, 229, 229, 0.61);
+}
+
+.btn_small_delete:hover {
+    background-color: rgba(255, 30, 30, 0.62);
+}
+
+@font-face {
+    font-family: "RubikMonoOne-Regular";
+    src: url('../fonts/RubikMonoOne-Regular.ttf') format("truetype");
+    font-style: normal;
+    font-weight: normal;
+} 

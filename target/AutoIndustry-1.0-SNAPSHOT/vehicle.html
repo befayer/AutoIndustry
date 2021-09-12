@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Транспортные средства</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body_form">
+    <div class="inner"><button>
+    <a href="javascript:history.back()">Назад</a>
+</button>
+<h1 class="title"><p>Транспортные средства</p></h1>
+<div class="form_links"></div>
+<p>
+    <a class="links" href="/main"><b>Главная страница</b></a>
+    <a class="links" href="brands">Марки</a>
+    <a class="links" href="factories">Заводы</a>
+    <a class="links" href="dealers">Автосалоны</a>
+    <a class="links" href="models">Модели</a>
+</p>
+<form class="main_form" id="vehicles" action="vehicles" method="post">
+    <table>
+        <tr>
+            <th class="header_of_table" scope="col">ID</th>
+            <th class="header_of_table" scope="col">Цвет</th>
+            <th class="header_of_table" scope="col">Тип кузова</th>
+            <th class="header_of_table" scope="col">Год</th>
+            <th class="header_of_table" scope="col">Название автосалона</th>
+            <th class="header_of_table" scope="col">Название завода</th>
+            <th class="header_of_table" scope="col">Название модели</th>
+            <th class="header_of_table" scope="col">Название марки</th>
+        </tr>
+        <form action="vehicles" method="POST">
+        <tr>
+            <td><input class="folder" type="text" name="id"y></td>
+            <td><input class="folder" type="text" name="color"></td>
+            <td><input class="folder" type="text" name="type"></td>
+            <td><input class="folder" type="text" name="name_dealer"></td>
+            <td><input class="folder" type="text" name="name_factory"></td>
+            <td><input class="folder" type="text" name="name_model"></td>
+            <td><input class="folder" type="text" name="name_brand"></td>
+            <td>
+                <button class="btn_small_edit_add" type="submit" name="action" value="edit">
+                    Редактировать
+                </button>
+            </td>
+            <td>
+                <button type="submit" class="btn_small_delete" name="action" value="delete">
+                    Удалить
+                </button>
+            </td>
+        </tr>
+        </form>
+    </table>
+</form>
+<p class="add_title">Добавить ТС</p>
+<form id="add-vehicle" action="vehicles" method="post">
+    <table>
+        <tr>
+            <td><input class="folder" type="number" name="year"></td>
+            <td><input class="folder" type="text" name="color"></td>
+            <td><select class="folder" type="text" style="width: max-content" name="id_model" placeholder="Выберите модель"
+                        title="Выберите модель">
+                </select></td>
+
+
+            <td><select class="folder" type="text" style="width: max-content" name="id_dealer" placeholder="Выберите автосалон"
+                        title="Выберите автосалон">
+                </select></td>
+
+            <!--<td><input type="text" name="id_factory" placeholder="Введите id factory" title="Введите id factory"></td>-->
+
+            <td><select class="folder" type="text" style="width: max-content" name="id_factory" placeholder="Выберите завод"
+                        title="Выберите завод">
+                </select></td>
+            <td>
+                <button class="btn_small_edit_add" type="submit" name="action" value="add">
+                    Добавить
+                </button>
+            </td>
+        </tr>
+    </table>
+</form>
+<p class="param_title">Параметризованный запрос</p>
+    <form class="main_form" id="request" action="vehicles" method="post">
+        <p class="add_title">Вывести транспортные средства, у которых год выпуска между</p>
+        <input class="folder" type="text" name="minYear" size="5" max="2030" min="1900" placeholder="мин." title="мин.">
+        <input class="folder" type="text" name="maxYear" size="5" max="2030" min="1900" placeholder="макс." title="макс.">
+        <button type="submit" class="btn_small_edit_add" name="action" value="request">
+            Выполнить
+        </button>
+        <table class="param_table">
+            <tr >
+                <th class="header_of_table" scope="col">ID</th>
+                <th class="header_of_table" scope="col">Цвет</th>
+                <th class="header_of_table" scope="col">Тип кузова</th>
+                <th class="header_of_table" scope="col">Год</th>
+                <th class="header_of_table" scope="col">Название автосалона</th>
+                <th class="header_of_table" scope="col">Название завода</th>
+                <th class="header_of_table" scope="col">Название модели</th>
+                <th class="header_of_table" scope="col">Название марки</th>
+            </tr>
+                <tr>
+                    <td><input class="folder" type="text" name="id"></td>
+                    <td><input class="folder" type="text" name="color"></td>
+                    <td><input class="folder" type="text" name="type"></td>
+                    <td><input class="folder" type="text" name="year"></td>
+                    <td><input class="folder" type="text" name="name_dealer"></td>
+                    <td><input class="folder" type="text" name="name_factory"></td>
+                    <td><input class="folder" type="text" name="name_model"></td>
+                    <td><input class="folder" type="text" name="name_brand"></td>
+                </tr>
+        </table>
+    </form>
+<p class="param_title">Параметризованный запрос</p>
+    <form class="main_form" id="requestNameBrand" action="vehicles" method="post">
+        <p class="add_title">Вывести транспортные средства марки:</p>
+        <input type="text" class="folder" name="nameBrand" placeholder="Введите название марки" title="Введите название марки">
+        <button type="submit" class="btn_small_edit_add" name="action" value="requestNameBrand">
+            Выполнить
+        </button>
+        <table class="param_table">
+            <tr>
+                <th class="header_of_table" scope="col">ID</th>
+                <th class="header_of_table" scope="col">Цвет</th>
+                <th class="header_of_table" scope="col">Тип кузова</th>
+                <th class="header_of_table" scope="col">Год</th>
+                <th class="header_of_table" scope="col">Название автосалона</th>
+                <th class="header_of_table" scope="col">Название завода</th>
+                <th class="header_of_table" scope="col">Название модели</th>
+                <th class="header_of_table" scope="col">Название марки</th>
+            </tr>
+                <tr>
+                    <td><input class="folder" type="text" name="id"></td>
+                    <td><input class="folder" type="text" name="color"></td>
+                    <td><input class="folder" type="text" name="type"></td>
+                    <td><input class="folder" type="text" name="year"></td>
+                    <td><input class="folder" type="text" name="name_dealer"></td>
+                    <td><input class="folder" type="text" name="name_factory"></td>
+                    <td><input class="folder" type="text" name="name_model"></td>
+                    <td><input class="folder" type="text" name="name_brand"></td>
+                </tr>
+        </table>
+    </form></div>
+    
+</body>
+</html>
